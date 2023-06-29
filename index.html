@@ -64,7 +64,34 @@
     }
 }
 
+.section-info h1.tit-principal {
+    text-align: center;
+}
 
+.section-info .img-habilidade figure {
+    position:relative;
+    height:200px;
+    transition: 0.5s;
+}
+
+.section-info .img-habilidade figure:hover p {
+    opacity: 1;
+    top:0px;
+}
+
+.section-info .img-habilidade figure p {
+    margin:0px;
+    padding:8px 15px;
+    border-radius: 5px;
+    background: #3b4048;
+    opacity: 0;
+    transition: 0.5s;
+    
+    position: absolute;
+    top:20px;
+    left:50%;
+    transform:translate(-50%,0%);
+}
 
 </style>    
 
@@ -75,8 +102,9 @@
 <header class="container-fluid">
     <div class="row">
         <div class="col-12 logo menu-nav-bar">
+
             <a href="https://devjoaosales.github.io/portfolio/">
-                <h1><span>dev</span>João Paulo</h1>
+                <h1><span>Dev</span>João Paulo</h1>
             </a>    
 
             <a class="btn-menu-dropdown" href="javascript:void(0)"><span class="material-icons icon-menu"></span></a>
@@ -88,6 +116,7 @@
                 <li><a href="javascript:void(0)">Contato</a></li>
                 <li><a id="btnThemeMode" href="javascript:void(0)"><span class="material-icons icon-moon"></span><span style="display:none;" class="material-icons icon-sun"></span></a></li>
             </ul>
+
         </div>
     </div>
 </header>
@@ -121,7 +150,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="box-info">
-                    <h1 id="sobreMim" >Sobre Mim</h1>
+                    <h1>Sobre Mim</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quo saepe laudantium sequi tenetur vel temporibus, consequatur sunt facilis dolores corporis voluptate? Officiis minima debitis hic nemo eum sit adipisci.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tenetur, fuga consequatur ratione facere ut possimus doloribus corporis porro numquam quae minus aliquam libero voluptatibus natus. Necessitatibus minus iste exercitationem?
@@ -132,15 +161,63 @@
     </div>
 </section>
 
-<!--##################### SECTION HABILIDADE ##########################--> 
+<!--##################### SECTION HABILIDADE 2 ##########################--> 
 
 <section id="habilidades" class="section-info">
     <div class="container-fluid">
+
         <div class="row">
+            <div class="col-12">
+                <h1 class="tit-principal">Habilidades</h1>
+            </div>
+        </div>
 
+        <div class="row">    
+            
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-github" style="background:url(./assets/image/github.png) no-repeat center;background-size:contain;"><p>GitHub</p></figure>
+            </div>
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-html5" style="background:url(./assets/image/html5.png) no-repeat center;background-size:contain;"><p>HTML5</p></figure>
+            </div>
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-css3" style="background:url(./assets/image/css3.png) no-repeat center;background-size:contain;"><p>CSS3</p></figure>
+            </div>
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-js" style="background:url(./assets/image/js.png) no-repeat center;background-size:contain;"><p>JavaScript</p></figure>
+            </div>
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-php" style="background:url(./assets/image/php.png) no-repeat center;background-size:contain;"><p>PHP</p></figure>
+            </div>
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-nodejs" style="background:url(./assets/image/nodejs.png) no-repeat center;background-size:contain;"><p>NODE</p></figure>
+            </div>
+
+            
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-nodejs" style="background:url(./assets/image/react-native.png) no-repeat center;background-size:contain;"><p>REACT NATIVE</p></figure>
+            </div>
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-github" style="background:url(./assets/image/github.png) no-repeat center;background-size:contain;"><p>GitHub</p></figure>
+            </div>
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-html5" style="background:url(./assets/image/html5.png) no-repeat center;background-size:contain;"><p>HTML5</p></figure>
+            </div>
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-css3" style="background:url(./assets/image/css3.png) no-repeat center;background-size:contain;"><p>CSS3</p></figure>
+            </div>
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-js" style="background:url(./assets/image/js.png) no-repeat center;background-size:contain;"><p>JavaScript</p></figure>
+            </div>
+            <div class="col-lg-1 img-habilidade">                
+                <figure class="img-php" style="background:url(./assets/image/php.png) no-repeat center;background-size:contain;"><p>PHP</p></figure>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-lg-4">
                 <div class="box-info">
-                    <h1>Sobre Mim</h1>
+                    <h2>Sobre Mim</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tenetur, fuga consequatur ratione facere ut possimus doloribus corporis porro numquam quae minus aliquam libero voluptatibus natus. Necessitatibus minus iste exercitationem?
                     </p>
@@ -149,7 +226,7 @@
 
             <div class="col-lg-4">
                 <div class="box-info">
-                    <h1>Sobre Mim</h1>
+                    <h2>Sobre Mim</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tenetur, fuga consequatur ratione facere ut possimus doloribus corporis porro numquam quae minus aliquam libero voluptatibus natus. Necessitatibus minus iste exercitationem?
                     </p>
@@ -158,7 +235,7 @@
 
             <div class="col-lg-4">
                 <div class="box-info">
-                    <h1>Sobre Mim</h1>
+                    <h2>Sobre Mim</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tenetur, fuga consequatur ratione facere ut possimus doloribus corporis porro numquam quae minus aliquam libero voluptatibus natus. Necessitatibus minus iste exercitationem?
                     </p>

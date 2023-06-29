@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+<style>
+
+header .menu-nav-bar .btn-menu-dropdown:focus span.icon-menu::before {
+    content:"close";
+}
+
+header .menu-nav-bar .btn-menu-dropdown:focus ~ ul {
+    right:0px;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    header .menu-nav-bar .btn-menu-dropdown {
+        display:initial;
+    }
+
+    header .menu-nav-bar {
+        
+    }
+
+    header .menu-nav-bar ul.navigation {
+        background: #212121;
+        position:fixed;
+        right: -400px;
+        top: 70px;
+        margin:0px;
+        padding: 10px 50px;
+        min-height: 300px;
+        min-width: 400px;
+    }
+
+    header .menu-nav-bar ul.navigation li {
+        display:block;
+        text-align: center;
+        margin: 15px;
+    }
+
+    header .menu-nav-bar ul.navigation li a {
+        display:inline-block;
+    }
+
+    header .menu-nav-bar ul.navigation li a#btnThemeMode {
+        display:block;
+    }
+}
+
+
+
+</style>    
+
+</head>
+<body class="dark">
+
+<!--########################### HEADER ###############################-->
+<header class="container-fluid">
+
+    <div class="row">
+        <div class="col-5 logo">
+            <a href="##">
+                <h1><span>dev</span>João Paulo</h1>
+            </a>    
+        </div>
+
+        <div class="col-7 menu-nav-bar">
+            <a class="btn-menu-dropdown" href="javascript:void(0)"><span class="material-icons icon-menu"></span></a>
+            <ul class="navigation">
+                <li><a class="active" href="##">Sobre Mim</a></li>
+                <li><a href="##">Habilidades</a></li>
+                <li><a href="##">Projetos</a></li>
+                <li><a href="##">Contato</a></li>
+                <li><a id="btnThemeMode" href="javascript:void(0)"><span class="material-icons icon-moon"></span><span style="display:none;" class="material-icons icon-sun"></span></a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+</header>
+
+<!--####################### SECTION HEADER ###########################--> 
+
+<section class="main-content-header">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12">
+                <div class="box-perfil">
+                    <figure></figure>
+                    <div class="descricao">
+                        <h1>Eu sou João Paulo</h1>
+                        <h2>Desenvolvedor</h2>
+                        <h2>Full Stack Pleno</h2>
+                        <a href="javascript:void(0)">Apresentação com audio</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--##################### SECTION SOBRE MIM ##########################--> 
+
+<section class="section-sobre-mim">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="sobre-mim">
+                    <h1 id="sobreMim" >Sobre Mim</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quo saepe laudantium sequi tenetur vel temporibus, consequatur sunt facilis dolores corporis voluptate? Officiis minima debitis hic nemo eum sit adipisci.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tenetur, fuga consequatur ratione facere ut possimus doloribus corporis porro numquam quae minus aliquam libero voluptatibus natus. Necessitatibus minus iste exercitationem?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--########################### FOOTER ###############################-->    
+<footer>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+        $(document).ready(function(){ 
+
+        });
+    </script>
+</footer>
+</body>
+</html>

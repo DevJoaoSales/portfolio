@@ -13,6 +13,12 @@
 
 @media only screen and (max-width: 900px) {
 
+    .main-content-header .box-perfil figure {
+        margin:0px;
+        width: 350px;
+        height: 340px;
+    }
+
     header .menu-nav-bar .btn-menu-dropdown {
         display:initial;
     }
@@ -23,8 +29,8 @@
         right: -400px;
         top: 0px;
         margin:0px;
-        min-height: 400px;
-        min-width: 400px;
+        min-height: 800px;
+        min-width: 300px;
     }
 
     header .menu-nav-bar .btn-menu-dropdown:focus ~ ul {
@@ -52,6 +58,10 @@
     header .menu-nav-bar ul.navigation li a#btnThemeMode {
         display:block;
     }
+
+    .dark .section-info .box-info {
+        margin:15px;
+    }
 }
 
 
@@ -63,7 +73,26 @@
 
 <!--########################### HEADER ###############################-->
 <header class="container-fluid">
+    <div class="row">
+        <div class="col-12 logo menu-nav-bar">
+            <a href="##">
+                <h1><span>dev</span>João Paulo</h1>
+            </a>    
 
+            <a class="btn-menu-dropdown" href="javascript:void(0)"><span class="material-icons icon-menu"></span></a>
+            <ul class="navigation">
+                <li><a href="##"><span class="material-icons icon-close"></span></a></li>
+                <li><a class="active" href="##">Sobre Mim</a></li>
+                <li><a href="##">Habilidades</a></li>
+                <li><a href="##">Projetos</a></li>
+                <li><a href="##">Contato</a></li>
+                <li><a id="btnThemeMode" href="javascript:void(0)"><span class="material-icons icon-moon"></span><span style="display:none;" class="material-icons icon-sun"></span></a></li>
+            </ul>
+        </div>
+
+
+    </div>
+<!--
     <div class="row">
         <div class="col-5 logo">
             <a href="##">
@@ -84,7 +113,7 @@
             
         </div>
     </div>
-
+-->
 </header>
 
 <!--####################### SECTION HEADER ###########################--> 

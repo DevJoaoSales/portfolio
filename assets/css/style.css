@@ -75,6 +75,16 @@ header .menu-nav-bar ul.navigation {
     transition: 1s;
 }
 
+header .menu-nav-bar ul.navigation li:first-child {
+    display:none;
+    margin-bottom:60px;
+    text-align: right;
+}
+
+header .menu-nav-bar ul.navigation li:first-child span.icon-close {
+    font-size: 40px;
+}
+
 header .menu-nav-bar ul.navigation li {
     display:inline-block;
     margin:5px 10px;
@@ -150,24 +160,29 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 
 /* ################ SOBRE MIM ################ */
 
-.dark .section-sobre-mim .sobre-mim {
-    background:#3b4048;
-    box-shadow:0px 0px 8px #0d9500c2;
+.section-info {
+    margin:50px 0px;
 }
 
-.light .section-sobre-mim .sobre-mim {
+.dark .section-info .box-info {
+    background:#3b4048;
+    box-shadow:0px 0px 8px #0d9500c2;
+    margin:15px auto;
+}
+
+.light .section-info .box-info {
     background:#fff;
     box-shadow: 2px -1px 8px #999;
 }
 
-.section-sobre-mim .sobre-mim {
+.section-info .box-info {
     max-width: 800px;
     margin:auto;
     padding:40px;
     border-radius: 5px;
 }
 
-.section-sobre-mim .sobre-mim h1 {
+.section-info .box-info h1 {
     font-weight: 600;
 }
 
@@ -188,3 +203,6 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
     content:"menu";
 }
 
+.icon-close::before {
+    content:"close";
+}

@@ -75,50 +75,26 @@
 <header class="container-fluid">
     <div class="row">
         <div class="col-12 logo menu-nav-bar">
-            <a href="##">
+            <a href="https://devjoaosales.github.io/portfolio/">
                 <h1><span>dev</span>João Paulo</h1>
             </a>    
 
             <a class="btn-menu-dropdown" href="javascript:void(0)"><span class="material-icons icon-menu"></span></a>
             <ul class="navigation">
-                <li><a href="##"><span class="material-icons icon-close"></span></a></li>
-                <li><a class="active" href="##">Sobre Mim</a></li>
-                <li><a href="##">Habilidades</a></li>
-                <li><a href="##">Projetos</a></li>
-                <li><a href="##">Contato</a></li>
+                <li><a href="javascript:void(0)"><span class="material-icons icon-close"></span></a></li>
+                <li><a class="active" href="#sobreMim">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="javascript:void(0)">Projetos</a></li>
+                <li><a href="javascript:void(0)">Contato</a></li>
                 <li><a id="btnThemeMode" href="javascript:void(0)"><span class="material-icons icon-moon"></span><span style="display:none;" class="material-icons icon-sun"></span></a></li>
             </ul>
         </div>
-
-
     </div>
-<!--
-    <div class="row">
-        <div class="col-5 logo">
-            <a href="##">
-                <h1><span>dev</span>João Paulo</h1>
-            </a>    
-        </div>
-
-        <div class="col-7 menu-nav-bar">
-            <a class="btn-menu-dropdown" href="javascript:void(0)"><span class="material-icons icon-menu"></span></a>
-            <ul class="navigation">
-                <li><a href="##"><span class="material-icons icon-close"></span></a></li>
-                <li><a class="active" href="##">Sobre Mim</a></li>
-                <li><a href="##">Habilidades</a></li>
-                <li><a href="##">Projetos</a></li>
-                <li><a href="##">Contato</a></li>
-                <li><a id="btnThemeMode" href="javascript:void(0)"><span class="material-icons icon-moon"></span><span style="display:none;" class="material-icons icon-sun"></span></a></li>
-            </ul>
-            
-        </div>
-    </div>
--->
 </header>
 
 <!--####################### SECTION HEADER ###########################--> 
 
-<section class="main-content-header">
+<section  class="main-content-header">
     <div class="container-fluid">
         <div class="row">
 
@@ -140,7 +116,7 @@
 
 <!--##################### SECTION SOBRE MIM ##########################--> 
 
-<section class="section-info">
+<section id="sobreMim" class="section-info">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -158,7 +134,7 @@
 
 <!--##################### SECTION HABILIDADE ##########################--> 
 
-<section class="section-info">
+<section id="habilidades" class="section-info">
     <div class="container-fluid">
         <div class="row">
 
@@ -202,6 +178,24 @@
 
     <script>
         $(document).ready(function(){ 
+
+            $(" a").on("click",function(event){                
+
+                if( this.hash !== "" ){
+                    event.preventDefault();
+                    
+                    let hash = this.hash;
+
+                    $("html, body").animate({
+                        scrollTop: $(hash).offset().top
+                    }, 
+                    800, 
+                    function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
 
         });
     </script>

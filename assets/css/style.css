@@ -70,7 +70,7 @@ header .menu-nav-bar ul.navigation {
     text-align: center;
     display: inline-block;
     float: right;
-    margin: 20px 0px;
+    margin: 20px 40px;
     transition: 1s;
 }
 
@@ -109,10 +109,6 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 
 /* ################ PERFIL ################ */
 
-.main-content-header {
-    margin:50px 0px;
-}
-
 .main-content-header .box-perfil {
     text-align: center;
     padding:20px 0px;
@@ -133,6 +129,7 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
     display: inline-block;
     margin:20px 0px;
     padding: 0px 20px;
+    vertical-align: middle;
 }
 
 .main-content-header .box-perfil .descricao h1 {
@@ -160,12 +157,12 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 /* ################ SOBRE MIM ################ */
 
 .section-info {
-    margin:50px 0px;
+    padding:80px 0px 0px 0px;
 }
 
 .dark .section-info .box-info {
     background:#3b4048;
-    box-shadow:0px 0px 8px #0d9500c2;
+    box-shadow:0px -2px 28px #0d9500c2;
     margin:15px auto;
 }
 
@@ -177,7 +174,7 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 .section-info .box-info {
     max-width: 800px;
     margin:auto;
-    padding:40px;
+    padding:20px;
     border-radius: 5px;
 }
 

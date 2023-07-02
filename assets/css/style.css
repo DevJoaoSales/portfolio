@@ -42,7 +42,7 @@ header .logo a {
 
 header .logo a h1 {
     display:inline-block;
-    margin: 20px;
+    margin:0px;
     font-size:25px;
     text-align: center;
     color:#fff;
@@ -178,7 +178,7 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
     border-radius: 5px;
 }
 
-.section-info .box-info h1 {
+.section-info .box-info h1, .section-info .box-info h2 {
     font-weight: 600;
 }
 
@@ -188,6 +188,7 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 .section-info h1.tit-principal {
     text-align: center;
     margin-bottom:40px;
+    font-weight: 600;
 }
 
 .section-info .img-habilidade {

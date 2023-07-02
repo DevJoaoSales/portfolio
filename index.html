@@ -40,7 +40,7 @@
     header .menu-nav-bar ul.navigation li {
         display:block;
         text-align: center;
-        margin: 15px;
+        margin: 40px 15px;
     }
 
     header .menu-nav-bar ul.navigation li:first-child {
@@ -62,9 +62,56 @@
     .dark .section-info .box-info {
         margin:15px;
     }
+
+    /* ############# SECTIONS ################ */
+
+    .main-content-header .box-perfil .descricao h1 {
+        font-size:38px;
+    }
+
+    .section-info {
+        padding:50px 0px 0px 0px;
+    }
+
+    .section-info h1.tit-principal {
+    }
+
+    .section-info h2 {
+        font-size:28px;
+    }
 }
 
+header .menu-nav-bar .box-links-redes {
+    display: inline-block;
+    margin:0px 20px;
+    margin-top:5px;
+}
 
+header .menu-nav-bar .box-links-redes a:first-child {
+    display: block;
+}
+
+header .menu-nav-bar .box-links-redes a.icon-linkedin, header .menu-nav-bar .box-links-redes a.icon-whatsapp {
+    display: inline-block;
+    margin:2px;
+    margin-right:8px;
+}
+
+header .menu-nav-bar .box-links-redes a.icon-linkedin figure {
+    background:url("assets/image/linkedin.png") no-repeat center;
+    background-size: contain;
+    width:20px;
+    height:20px;
+    margin:0px;
+}
+
+header .menu-nav-bar .box-links-redes a.icon-whatsapp figure {
+    background:url("assets/image/whatsapp.png") no-repeat center;
+    background-size: contain;
+    width:20px;
+    height:20px;
+    margin:0px;
+}
 
 </style>    
 
@@ -74,11 +121,15 @@
 <!--########################### HEADER ###############################-->
 <header class="container-fluid">
     <div class="row">
-        <div class="col-12 logo menu-nav-bar">
+        <div class="col-12 menu-nav-bar">
 
-            <a href="https://devjoaosales.github.io/portfolio/">
-                <h1><span>Dev</span>João Paulo</h1>
-            </a>    
+            <div class="box-links-redes logo">
+                <a href="https://devjoaosales.github.io/portfolio/">
+                    <h1><span>Dev</span>João Paulo</h1>
+                </a>  
+                <a class="icon-linkedin" href="javascript:void(0)"><figure></figure></a>
+                <a class="icon-whatsapp" href="javascript:void(0)"><figure></figure></a>
+            </div>
 
             <a class="btn-menu-dropdown" href="javascript:void(0)"><span class="material-icons icon-menu"></span></a>
             <ul class="navigation">
@@ -104,7 +155,7 @@
                 <div class="box-perfil">
                     <figure></figure>
                     <div class="descricao">
-                        <h1>Eu sou João Paulo</h1>
+                        <h1>Sou João Paulo</h1>
                         <h2>Desenvolvedor</h2>
                         <h2>Full Stack Pleno</h2>
                         <a href="javascript:void(0)">Apresentação com audio</a>
@@ -141,7 +192,7 @@
 
         <div class="row">
             <div class="col-12">
-                <h1 class="tit-principal">HABILIDADES TECNOLOGICAS</h1>
+                <h1 class="tit-principal">HABILIDADES</h1>
             </div>
         </div>
 

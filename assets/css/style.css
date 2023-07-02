@@ -54,6 +54,39 @@ header .logo a h1 span {
     text-transform: uppercase;
 }
 
+
+header .menu-nav-bar .box-links-redes {
+    display: inline-block;
+    margin:0px 20px;
+    margin-top:5px;
+}
+
+header .menu-nav-bar .box-links-redes a:first-child {
+    display: block;
+}
+
+header .menu-nav-bar .box-links-redes a.icon-linkedin, header .menu-nav-bar .box-links-redes a.icon-whatsapp {
+    display: inline-block;
+    margin:2px;
+    margin-right:8px;
+}
+
+header .menu-nav-bar .box-links-redes a.icon-linkedin figure {
+    background:url("../image/linkedin.png") no-repeat center;
+    background-size: contain;
+    width:20px;
+    height:20px;
+    margin:0px;
+}
+
+header .menu-nav-bar .box-links-redes a.icon-whatsapp figure {
+    background:url("../image/whatsapp.png") no-repeat center;
+    background-size: contain;
+    width:20px;
+    height:20px;
+    margin:0px;
+}
+
 header .menu-nav-bar .btn-menu-dropdown {
     display:none;
     float: right;

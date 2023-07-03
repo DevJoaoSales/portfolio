@@ -150,12 +150,13 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 .main-content-header .box-perfil figure {
     display:inline-block;
     margin:10px 0px;
-    background:url("../image/foto-perfil.jpg") no-repeat top center;
+    background:url("../image/foto-perfil.jpg") no-repeat center;
     width:400px;
     height: 390px;
     border-radius: 300px;
     margin-right: 30px;
     vertical-align: middle;
+    background-size: cover;
 }
 
 .main-content-header .box-perfil .descricao {

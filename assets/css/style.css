@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-@import url("../font/Roboto-Thin.ttf");
+/*@import url("../font/Roboto-Thin.ttf"); */
+@import url("../font/Roboto-Regular.ttf");
 
 :root {
     --fonte1: 'Roboto', sans-serif;

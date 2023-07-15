@@ -11,6 +11,7 @@
     padding:0px;
     font-family: var(--fonte1);
     font-weight: 100;
+    word-wrap: break-word;
 }
 
 .icon-search::before {
@@ -19,7 +20,7 @@
 
 /* ################ HEADER ################ */
 body {
-    padding:80px 0px;
+    padding-top:80px;
 }
 
 body.dark {
@@ -65,7 +66,7 @@ header .menu-nav-bar .box-links-redes a:first-child {
     display: block;
 }
 
-header .menu-nav-bar .box-links-redes a.icon-linkedin, header .menu-nav-bar .box-links-redes a.icon-whatsapp {
+header .menu-nav-bar .box-links-redes a.icon-linkedin, header .menu-nav-bar .box-links-redes a.icon-whatsapp, header .menu-nav-bar .box-links-redes a.icon-mail {
     display: inline-block;
     margin:2px;
     margin-right:8px;
@@ -85,6 +86,14 @@ header .menu-nav-bar .box-links-redes a.icon-whatsapp figure {
     width:20px;
     height:20px;
     margin:0px;
+}
+
+header .menu-nav-bar .box-links-redes a.icon-mail {
+    color: #fff;
+    font-size: 15px;
+    vertical-align: top;
+    margin: 0px;
+    margin-right: 8px;
 }
 
 header .menu-nav-bar .btn-menu-dropdown {
@@ -190,17 +199,17 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 
 /* ################ SOBRE MIM ################ */
 
-.section-info {
-    padding:50px 20px 0px 20px;
+.section-info, .section-projeto {
+    padding:80px 20px 0px 20px;
 }
 
-.dark .section-info .box-info {
+.dark .section-info .box-info, .dark .section-projeto .box-projeto {
     background:#3b4048;
-    box-shadow:5px 5px 25px #0d9500c2;
+    box-shadow:6px -5px 12px #0d9500c2;
     margin:15px auto;
 }
 
-.light .section-info .box-info {
+.light .section-info .box-info, .light .section-projeto .box-projeto {
     background:#fff;
     box-shadow: 2px -1px 8px #999;
 }
@@ -208,7 +217,7 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 .section-info .box-info {
     max-width: 800px;
     margin:auto;
-    padding:20px;
+    padding:30px;
     border-radius: 5px;
 }
 
@@ -219,9 +228,8 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 /* ############# HABILIDADES ################ */
 
 
-.section-info h1.tit-principal {
+.section-info h1.tit-principal, .section-projeto h1.tit-principal {
     text-align: center;
-    margin-bottom:40px;
     font-weight: 600;
 }
 
@@ -262,6 +270,121 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 
 /* ############### PROJETOS ################ */
 
+.section-projeto .box-projeto {
+    text-align: center;
+    padding:50px;
+    border-radius: 5px;
+}
+
+.section-projeto .box-projeto .row {
+    margin-bottom:40px;
+}
+
+.section-projeto .box-projeto .row:last-child {
+    margin-bottom:0px;
+}
+
+.section-projeto .box-projeto h2 {
+    margin-bottom:10px;
+    font-weight:800;
+}
+
+.dark .section-projeto .box-projeto a {
+    color:#fff;
+}
+
+.light .section-projeto .box-projeto a {
+    color:#000;
+}
+
+.section-projeto .box-projeto a {
+    transition: 1s;
+    text-decoration:underline;
+}
+
+.section-projeto .box-projeto p {
+    margin:30px 0px;
+}
+
+.section-projeto .box-projeto img {
+    width:100%;
+}
+
+/* ################ FOOTER ################# */
+
+.light footer {
+    box-shadow: 0px -20px 20px #999;
+}
+
+footer {
+    background:#212121;
+    color:#fff;
+    box-shadow: 0px 0px 20px #0d9500c2;
+    margin-top:100px;
+    padding:100px 20px;
+    min-height:500px;
+    text-align: center;
+}
+
+footer h1, footer h2 {
+    margin:20px 0px;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 30px;
+}
+
+footer h2 {
+    font-size: 22px;
+}
+
+footer .info-contato {
+    margin:auto;
+    width:250px;
+    text-align: left;
+}
+
+footer .info-contato .logo span {
+    margin-right: 5px;
+    color: #0fbf0f;
+    text-transform: uppercase;
+}
+
+footer .info-contato .icon-linkedin, footer .info-contato .icon-whatsapp, footer .info-contato .icon-mail {
+    display: inline-block;
+    color:#fff;
+    width:100%;
+    margin:5px 0px;
+}
+
+footer .info-contato .icon-mail .icon-email {
+    font-size: 30px;
+}
+
+footer .info-contato .icon-linkedin figure {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../image/linkedin.png) no-repeat center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+footer .info-contato .icon-whatsapp figure {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../image/whatsapp.png) no-repeat center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+footer .info-contato .icon-linkedin figure, footer .info-contato .icon-whatsapp figure, footer .info-contato .icon-mail .icon-email {
+    margin:0px;
+    margin-right:5px;
+}
+
 /* ################# ICONS ################ */ 
 .material-icons {
     vertical-align: middle;
@@ -281,4 +404,8 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 
 .icon-close::before {
     content:"close";
+}
+
+.icon-email::before {
+    content:"email";
 }

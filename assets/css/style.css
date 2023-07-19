@@ -207,7 +207,6 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 .dark .section-info .box-info, .dark .section-projeto .box-projeto {
     background:#3b4048;
     box-shadow:6px -5px 12px #0d9500c2;
-    margin:15px auto;
 }
 
 .light .section-info .box-info, .light .section-projeto .box-projeto {
@@ -217,7 +216,7 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 
 .section-info .box-info {
     max-width: 800px;
-    margin:auto;
+    margin:15px;
     padding:30px;
     border-radius: 5px;
 }
@@ -265,13 +264,18 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
     top:-50px;
 }
 
-.min-box-habilidade {
+.section-info .min-box-habilidade {
     padding: 10px 0px;
+}
+
+.section-info .min-box-habilidade .box-info {
+    min-height:220px;
 }
 
 /* ############### PROJETOS ################ */
 
 .section-projeto .box-projeto {
+    margin-top: 30px;
     text-align: center;
     padding:50px;
     border-radius: 5px;

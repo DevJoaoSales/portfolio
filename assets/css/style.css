@@ -11,7 +11,7 @@
     margin:0px;
     padding:0px;
     font-family: var(--fonte1);
-    font-weight: 100;
+    font-weight: 400;
     word-wrap: break-word;
 }
 
@@ -223,6 +223,7 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 
 .section-info .box-info h1, .section-info .box-info h2 {
     font-weight: 600;
+    font-size: 26px;
 }
 
 /* ############# HABILIDADES ################ */
@@ -250,8 +251,11 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
     border-radius: 5px;
     background: #3b4048;
     color:#fff;
+    border: 1px solid #afafaf;
+    box-shadow: 0px 0px 3px #afafaf;
     opacity: 0;
     transition: 0.5s;
+
     
     position: absolute;
     top:20px;
@@ -282,7 +286,7 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 }
 
 .section-projeto .box-projeto .row {
-    margin-bottom:40px;
+    margin-bottom:100px;
 }
 
 .section-projeto .box-projeto .row:last-child {

@@ -286,7 +286,7 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 }
 
 .section-projeto .box-projeto .row {
-    margin-bottom:100px;
+    margin: 50px 0px;
 }
 
 .section-projeto .box-projeto .row:last-child {

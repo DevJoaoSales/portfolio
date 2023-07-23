@@ -72,4 +72,18 @@
     .section-projeto .box-projeto {
         padding:30px;
     }
+
+    .section-projeto {
+        padding: 0px;
+    }
+
+    .section-projeto .box-projeto {
+        padding: 15px;
+    }
+
+    .section-projeto .box-projeto h2 {
+        margin:15px 0px;
+        font-size: 22px;
+    }
+
 }

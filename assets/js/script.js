@@ -35,6 +35,31 @@ $(document).ready(function(){
                 
             });  // ##### END THEME MODE. ######
 
+            // ############# SCROLL SUAVE ##############
+            $(" a").on("click",function(event){                
+
+                if( this.hash !== "" ){
+                    event.preventDefault();
+                    
+                    let hash = this.hash;
+
+                    $("html, body").animate({
+                        scrollTop: $(hash).offset().top
+                    }, 
+                    800, 
+                    function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });  // ###### END SCROLL SUAVE ######### 
+
+
+            // ######### MENU ATIVA BOTÕES #########
+            $(".navigation li a").on("click",function(){
+                $(".navigation li a.active").removeClass("active");
+                $(this).addClass("active");
+            });
+
 
 
 });

@@ -273,7 +273,18 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
 }
 
 .section-info .min-box-habilidade .box-info {
-    min-height:220px;
+    min-height:280px;
+}
+
+.section-info .min-box-habilidade .box-info p {
+    min-height:100px;
+}
+
+.section-info .min-box-habilidade .box-info span.material-icons{
+    display: block;
+    margin: 10px auto;
+    font-size: 50px;
+    width: 54px;
 }
 
 /* ############### PROJETOS ################ */
@@ -392,6 +403,32 @@ footer .info-contato .icon-whatsapp figure {
 footer .info-contato .icon-linkedin figure, footer .info-contato .icon-whatsapp figure, footer .info-contato .icon-mail .icon-email {
     margin:0px;
     margin-right:5px;
+}
+
+
+.section-projeto .box-projeto span.img-tec-uti {
+    display:block;
+    margin:10px 0px;
+}
+
+.section-projeto .box-projeto span.img-tec-uti i {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin-right:10px;
+    margin-bottom: 5px;
+}
+.my-4 {
+    transition:1s;
+    width:100%;
+}
+
+body.dark .my-4 {
+    background: #fff;
+}
+
+body.light .my-4 {
+    background: #d3d3d3;
 }
 
 /* ################# ICONS ################ */ 

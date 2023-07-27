@@ -183,6 +183,7 @@ body.light .my-4 {
                     <p>
                         Gosto muito de programar, gosto de novos desafios e gosto de adquirir novos conhecimentos.
                     </p>
+                    <span class="material-icons">school</span>
                 </div>
             </div>
 
@@ -190,8 +191,9 @@ body.light .my-4 {
                 <div class="box-info">
                     <h2>Resolução de Problemas</h2>
                     <p>
-                        Tenho facilidade em compreender e detectar as causas de problemas com o sistema entrando rápidamente com solução.
+                        Tenho facilidade em compreender e detectar as causas de problemas com o sistema, entrando rápidamente com solução.
                     </p>
+                    <span class="material-icons">extension</span>
                 </div>
             </div>
 
@@ -199,8 +201,9 @@ body.light .my-4 {
                 <div class="box-info">
                     <h2>Visão Ampla</h2>
                     <p>
-                        Possuo uma visão ampla, pois gosto de aprender um pouco de tudo relacionado a área, por exemplo, Programação, HardWare, Sistemas operacionais, Redes de computadores, Servidores, etc.
+                        Possuo uma visão ampla, pois gosto de compreender tudo relacionado a aplicação exemplo, Programação, HardWare, Sistemas operacionais, Redes de computadores, Servidores, etc.
                     </p>
+                    <span class="material-icons">visibility</span>
                 </div>
             </div>
 
@@ -258,25 +261,28 @@ body.light .my-4 {
             <div class="row">  
                 
                 <div class="col-lg-6">
-                    <a target="_blank" href="javascript:void(0)">
-                        <img src="./assets/image/projeto-radio.png" alt="">
+                    <a target="_black" href="./assets/image/projetos/site-com-painel.gif">
+                        <img src="./assets/image/projetos/site-com-painel.gif" alt="">
                     </a>
                 </div>
 
                 <div class="col-lg-6" style="text-align:left;"> 
-                    <h2>Game em inglês ou painel de controle administrativo.</h2>
-                    <a target="_blank" href="https://www.mercadosuperfantastico.com.br/radio/">https://www.mercadosuperfantastico.com.br/radio/</a>
+                    <!--<h2>Game em inglês ou painel de controle administrativo.</h2>-->
+                    <h2>Site com Painel de controle administrativo.</h2>
                     
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vero tempora totam sit excepturi sint beatae, corrupti repellendus molestias dignissimos, animi dolor delectus sequi explicabo repellat minima ratione? Consequuntur, at.<br><br>
+                        Projeto experimental para testar minhas habilidade e mostrar meus conhecimentos, este é um site comum empresarial mas que pode ter seu conteúdo alterado dentro de uma painel administrativo podendo alterar informações da empresa e seção da equipe de funcionários. Todas as informações são guardadas dentro do banco de dados e atualizada em cada alteração com PHP e MYSQL.<br><br>
                         
                         Tecnologias Utilizadas neste projeto:
 
                         <span class="img-tec-uti"> 
                             <i title="HTML5" style="background:url(./assets/image/html5.png) no-repeat center;background-size:contain;"></i>
                             <i title="CSS3" style="background:url(./assets/image/css3.png) no-repeat center;background-size:contain;"></i>
+                            <i title="BootStrap" style="background:url(./assets/image/bootstrap.png) no-repeat center;background-size:contain;"></i>
                             <i title="JavaScript" style="background:url(./assets/image/js.png) no-repeat center;background-size:contain;"></i>
                             <i title="jQuery" style="background:url(./assets/image/jquery.png) no-repeat center;background-size:contain;"></i>
+                            <i title="PHP" style="background:url(./assets/image/php.png) no-repeat center;background-size:cover;width:60px;"></i>
+                            <i title="MYSQL" style="background:url(./assets/image/mysql.png) no-repeat center;background-size:cover;width:60px;"></i>
                         </span>
                     </p>
                 </div>
@@ -288,8 +294,10 @@ body.light .my-4 {
             <!-- ################# PROJETO ITEM ################## -->
             <div class="row">
 
-                <div class="col-lg-6">                
-                    <img src="./assets/image/projeto-radio.png" alt="">                
+                <div class="col-lg-6">       
+                    <a target="_blank" href="./assets/image/projetos/app-idioma.gif">         
+                        <img src="./assets/image/projetos/app-idioma.gif" alt="">                
+                    </a>    
                 </div> 
                 
                 <div class="col-lg-6" style="text-align:left;"> 
@@ -363,23 +371,6 @@ body.light .my-4 {
 
     <script>
         $(document).ready(function(){ 
-
-            $(" a").on("click",function(event){                
-
-                if( this.hash !== "" ){
-                    event.preventDefault();
-                    
-                    let hash = this.hash;
-
-                    $("html, body").animate({
-                        scrollTop: $(hash).offset().top
-                    }, 
-                    800, 
-                    function(){
-                        window.location.hash = hash;
-                    });
-                }
-            });
 
 
         });

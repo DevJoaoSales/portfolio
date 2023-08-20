@@ -330,6 +330,15 @@ header .menu-nav-bar ul.navigation li a#btnThemeMode {
     width:100%;
 }
 
+.section-projeto .box-projeto ul {
+    margin:0px;
+}
+
+.section-projeto .box-projeto ul li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 /* ################ FOOTER ################# */
 
 .light footer {
